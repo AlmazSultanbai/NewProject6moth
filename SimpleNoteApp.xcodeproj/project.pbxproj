@@ -10,7 +10,6 @@
 		C0438F952BD031B100F49CFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0438F942BD031B100F49CFB /* AppDelegate.swift */; };
 		C0438F972BD031B100F49CFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0438F962BD031B100F49CFB /* SceneDelegate.swift */; };
 		C0438F992BD031B100F49CFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0438F982BD031B100F49CFB /* ViewController.swift */; };
-		C0438F9C2BD031B100F49CFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0438F9A2BD031B100F49CFB /* Main.storyboard */; };
 		C0438F9E2BD031B100F49CFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0438F9D2BD031B100F49CFB /* Assets.xcassets */; };
 		C0438FA12BD031B100F49CFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0438F9F2BD031B100F49CFB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 		C0438F942BD031B100F49CFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0438F962BD031B100F49CFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C0438F982BD031B100F49CFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C0438F9B2BD031B100F49CFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0438F9D2BD031B100F49CFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0438FA02BD031B100F49CFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0438FA22BD031B100F49CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +54,30 @@
 		C0438F932BD031B100F49CFB /* SimpleNoteApp */ = {
 			isa = PBXGroup;
 			children = (
+				C0438FA82BD03C4000F49CFB /* AppDelegte */,
+				C0438F982BD031B100F49CFB /* ViewController.swift */,
+				C0438FA92BD03C5600F49CFB /* Resources */,
+			);
+			path = SimpleNoteApp;
+			sourceTree = "<group>";
+		};
+		C0438FA82BD03C4000F49CFB /* AppDelegte */ = {
+			isa = PBXGroup;
+			children = (
 				C0438F942BD031B100F49CFB /* AppDelegate.swift */,
 				C0438F962BD031B100F49CFB /* SceneDelegate.swift */,
-				C0438F982BD031B100F49CFB /* ViewController.swift */,
-				C0438F9A2BD031B100F49CFB /* Main.storyboard */,
+			);
+			path = AppDelegte;
+			sourceTree = "<group>";
+		};
+		C0438FA92BD03C5600F49CFB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				C0438F9D2BD031B100F49CFB /* Assets.xcassets */,
 				C0438F9F2BD031B100F49CFB /* LaunchScreen.storyboard */,
 				C0438FA22BD031B100F49CFB /* Info.plist */,
 			);
-			path = SimpleNoteApp;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +140,6 @@
 			files = (
 				C0438FA12BD031B100F49CFB /* LaunchScreen.storyboard in Resources */,
 				C0438F9E2BD031B100F49CFB /* Assets.xcassets in Resources */,
-				C0438F9C2BD031B100F49CFB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +159,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C0438F9A2BD031B100F49CFB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C0438F9B2BD031B100F49CFB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C0438F9F2BD031B100F49CFB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,10 +298,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BV2B832NGF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SimpleNoteApp/Info.plist;
+				INFOPLIST_FILE = SimpleNoteApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,10 +325,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BV2B832NGF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SimpleNoteApp/Info.plist;
+				INFOPLIST_FILE = SimpleNoteApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
